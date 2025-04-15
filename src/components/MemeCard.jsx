@@ -3,7 +3,7 @@ import "../styles/memeCard.css";
 
 const MemeCard = ({ data }) => {
   return (
-    <Card key={data.id} className="card">
+    <Card key={data.id} className="card" onPress={() => window.location.href(`${data.image}`)}>
       <CardBody className="card-body">
         <Image
           alt={data.name}
